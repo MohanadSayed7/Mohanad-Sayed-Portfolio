@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohanadsayed7.github.io/Mohanad-Sayed-Portfolio/sitemap.xml
+
+# ---------------------------------------------------
+# /!\ WARNING: AUTHORIZED ACCESS ONLY /!\
+# ---------------------------------------------------
+# Hello fellow researcher!
+# Looking for vulnerabilities? Good luck.
+# Here is a little gift for your curiosity:
+# Flag: CTF{W3lc0m3_T0_M0h4n4d_L4b_2026}
+# ---------------------------------------------------
+
+# Fake Paths (Honeypots for scanners)
+Disallow: /admin-panel/
+Disallow: /private-keys/
+Disallow: /wp-admin/
