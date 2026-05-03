@@ -1,7 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. Typing Animation
     const typedElement = document.querySelector(".multiple-text");
     if (typedElement) {
         new Typed(".multiple-text", {
@@ -12,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. Scroll Reveal Animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -26,12 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(element);
     });
 
-    // 3. Theme Toggle (Light / Dark)
     const themeBtn = document.querySelector("#theme-toggle");
     if (themeBtn) {
         const themeIcon = themeBtn.querySelector("i");
         
-        // Force Light Mode as Default
         let currentTheme = localStorage.getItem("theme") || "light";
         
         const applyTheme = (theme) => {
@@ -55,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 4. Active Navbar Link on Scroll
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("header nav a");
 
@@ -76,7 +70,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 5. Professional Welcome Note in Console
+    document.querySelectorAll('header nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key)) || 
+            (e.ctrlKey && ['U', 'u'].includes(e.key))) {
+            e.preventDefault();
+        }
+    });
+
     console.log("%c Welcome to Mohanad Sayed Mutawea's Portfolio ", "background: #00bcd4; color: #fff; font-size: 14px; font-weight: bold; border-radius: 5px; padding: 5px;");
     console.log("Looking under the hood? I respect that. Let's connect!");
 });
