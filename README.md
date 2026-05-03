@@ -40,7 +40,7 @@ A real-time object detection radar system using Arduino and ESP32. This project 
 
 ## 📧 Contact & Connect
 - **LinkedIn:** [mohanad-sayed-it](https://linkedin.com/in/mohanad-sayed-it)
-- **Email:** (Add your email here)
+- **Email:** (mohanadsayed414@gmail.com)
 - **Language:** Learning German (Beginner) 🇩🇪
 
 ---
