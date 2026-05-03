@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Eng. Mohanad</title>
+    
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            
+            --bg-main: #f8fafc;
+            --text-pure: #0f172a;
+            --text-muted: #64748b;
+            --primary: #00bcd4;
+            --card-bg: #ffffff;
+            --card-border: #e2e8f0;
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-pure);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        
+        .error-container {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .error-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-pure);
+            margin-bottom: 1.5rem;
+        }
+
+        
+        .code-box {
+            background-color: var(--bg-main);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: left;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .code-box .prompt { color: var(--primary); font-weight: 600; }
+        .code-box .error-txt { color: #ef4444; } 
+        
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 1.1rem;
+            background-color: var(--primary);
+            vertical-align: middle;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink { 
+            0%, 100% { opacity: 1; } 
+            50% { opacity: 0; } 
+        }
+
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 0.8rem 2rem;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+
+        
+        <div class="code-box">
+            <p><span class="prompt">mohanad@server:</span><span style="color:var(--text-pure)">~</span>$ <span class="error-txt">cat</span> request.log</p>
+            <p style="margin: 8px 0;">> Error: Target path does not exist.</p>
+            <p>> Status: <span class="error-txt">404 / Access Denied</span></p>
+            <p style="margin-top: 8px;"><span class="prompt">mohanad@server:</span><span style="color:var(--text-pure)">~</span>$ <span class="cursor"></span></p>
+        </div>
+
+        
+        <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Return to Lab</a>
+    </div>
+
+</body>
+</html>
