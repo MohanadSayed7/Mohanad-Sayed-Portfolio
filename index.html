@@ -41,12 +41,11 @@
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
+            <p class="greeting-text">Hello, It's Me</p>
             <h1>Mohanad Sayed</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p class="role-text">And I'm a <span class="multiple-text"></span></p>
 
             <div class="intro-text">
                 <p>IT Student & Researcher dedicated to building secure systems, conducting academic research, and developing innovative hardware solutions.</p>
@@ -75,12 +74,11 @@
 
         <div class="home-img">
             <div class="img-wrapper">
-                <img src="img/mohanad-sayed-mutawa-removebg-preview.png" alt="Eng. Mohanad Sayed Mutawea">
+                <img src="img/mohanad-sayed-mutawa-removebg-preview.webp" alt="Eng. Mohanad Sayed Mutawea">
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
     <section id="education">
         <h2 class="heading">My <span>Education</span></h2>
         <div class="container">
@@ -92,13 +90,12 @@
                     <span class="date-badge">2025 - Present</span>
                 </div>
                 <div class="edu-image">
-                    <img src="img/university.webp" alt="6 October Technological University Logo">
+                    <img src="img/university.webp" alt="6 October Technological University Logo" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CERTIFICATES SECTION -->
     <section id="certificates">
         <h2 class="heading">Expertise & <span>Certificates</span></h2>
         <div class="container bento-grid">
@@ -213,7 +210,6 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO / RESEARCH SECTION -->
     <section id="portfolio">
         <h2 class="heading">Research & <span>Projects</span></h2>
         <div class="container bento-grid">
@@ -241,20 +237,18 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
     <section id="contact">
         <h2 class="heading">Get In <span>Touch</span></h2>
         <form action="https://formspree.io/f/mrejekap" method="POST">
             <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="name" placeholder="Full Name" aria-label="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
             </div>
-            <textarea name="message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+            <textarea name="message" cols="30" rows="8" placeholder="Your Message" aria-label="Your Message" required></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
 
-    <!-- FOOTER -->
     <footer class="modern-footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -273,9 +267,9 @@
             <div class="footer-contact">
                 <h4>Connect</h4>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/mohanad-sayed-45237b342" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/MohanadSayed7" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://wa.me/201141407807" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/mohanad-sayed-45237b342" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MohanadSayed7" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/201141407807" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
@@ -284,9 +278,8 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
